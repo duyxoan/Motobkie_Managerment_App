@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtMaXe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã xe"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/edtTenHangXe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên hãng xe"
+        android:layout_below="@id/edtMaXe"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/edtTenXe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên xe"
+        android:layout_below="@id/edtTenHangXe"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/edtMauSac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Màu sắc"
+        android:layout_below="@id/edtTenXe"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/edtDonGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Đơn giá"
+        android:layout_below="@id/edtMauSac"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/edtLuongBan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lượng bán"
+        android:layout_below="@id/edtDonGia"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/edtTonKho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tồn kho"
+        android:layout_below="@id/edtLuongBan"
+        android:layout_margin="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/firstRowButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/edtTonKho"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Xóa"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondRowButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/firstRowButtons"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnQuery"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Xem danh sách"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"/>
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/secondRowButtons"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

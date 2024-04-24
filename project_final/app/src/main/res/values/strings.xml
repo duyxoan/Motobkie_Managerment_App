@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">demo</string>
+    <string name="username">Tên người dùng</string>
+    <string name="password">Mật khẩu</string>
+    <string name="manager">Quản lý</string>
+    <string name="staff">Nhân viên</string>
+    <string name="login">Đăng nhập</string>
+    <string name="exit">Thoát</string>
+    <string name="manager_dashboard">Welcome to Manager Motobike App</string>
+    <string name="manage_product">Quản lý sản phẩm</string>
+    <string name="manage_revenue">Quản lý doanh thu</string>
+    <string name="manage_employees">Quản lý nhân viên</string>
+    <string name="manage_customer">Quản lý khách hàng</string>
+    <string name="logout">Đăng xuất</string>
+</resources>

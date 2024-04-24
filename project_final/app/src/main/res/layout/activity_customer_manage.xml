@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtMaKH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã khách hàng"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtTenKH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtMaKH"
+        android:layout_marginTop="8dp"
+        android:hint="Tên khách hàng"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTenKH"
+        android:layout_marginTop="8dp"
+        android:hint="Địa chỉ"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtSDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtDiaChi"
+        android:layout_marginTop="8dp"
+        android:hint="Số điện thoại"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edtXedaMua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtSDT"
+        android:layout_marginTop="8dp"
+        android:hint="Xe đã mua"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtMauSac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtXedaMua"
+        android:layout_marginTop="8dp"
+        android:hint="Màu sắc"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtDonGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtMauSac"
+        android:layout_marginTop="8dp"
+        android:hint="Đơn giá"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtNgayMua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtDonGia"
+        android:layout_marginTop="8dp"
+        android:hint="Ngày mua"
+        android:inputType="date" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/edtNgayMua"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xoá" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cập nhật" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btnInsert"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnQuery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xem danh sách" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Trở về" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBack"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
